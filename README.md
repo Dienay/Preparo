@@ -9,6 +9,8 @@ Início (no caso de haver instruções específicas que o candidato considere im
 Dados básicos;
 Localização;
 
+Veja o Projeto funcionando aqui: [Preparo](http://clone-preparo.surge.sh/)
+
 <br>
 
 ## Como rodar a aplicação
