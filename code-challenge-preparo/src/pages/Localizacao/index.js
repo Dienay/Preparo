@@ -17,6 +17,7 @@ function Localizacao() {
       const { name, value } = event.target
       onChange(name, value)
   }
+
   return (
     <div>
       <Header />
@@ -29,33 +30,67 @@ function Localizacao() {
               <p>Preencha seus dados de Localização. Sempre os mantenha atualizado.</p>
             </div>
             <Form className="" noValidate autoComplete="off">
-              <Form.Group controlId="formBasicEmail">
+              <Form.Group>
                 <Form.Label>CEP<span class="text-danger">*</span></Form.Label>
-                <Form.Control type="email" placeholder="12345-678" />
+                <Form.Control
+                 type="text" 
+                 onChange={handleInputChange}
+                 placeholder="12345-678"
+                />
               </Form.Group>
-              <Form.Group controlId="formBasicEmail">
+
+              <Form.Group>
                 <Form.Label>Cidade<span class="text-danger">*</span></Form.Label>
-                <Form.Control type="email" placeholder="Insira o nome de sua cidade atual" />
+                <Form.Control
+                 type="text" 
+                 onChange={handleInputChange}
+                 placeholder="Insira o nome de sua cidade atual"
+                />
               </Form.Group>
-              <Form.Group controlId="formBasicEmail">
+
+              <Form.Group>
                 <Form.Label>Estado<span class="text-danger">*</span></Form.Label>
-                <Form.Control type="email" placeholder="Selecione o Estado" />
+                <Form.Control
+                 type="text" 
+                 onChange={handleInputChange}
+                 placeholder="Selecione o Estado"
+                />
               </Form.Group>
-              <Form.Group controlId="formBasicEmail">
+
+              <Form.Group>
                 <Form.Label>Bairro<span class="text-danger">*</span></Form.Label>
-                <Form.Control type="email" placeholder="Insira o nome de seu bairro" />
+                <Form.Control
+                 type="text" 
+                 onChange={handleInputChange}
+                 placeholder="Insira o nome de seu bairro"
+                />
               </Form.Group>
-              <Form.Group controlId="formBasicEmail">
+
+              <Form.Group>
                 <Form.Label>Endereço<span class="text-danger">*</span></Form.Label>
-                <Form.Control type="email" placeholder="Insira seu endereço" />
+                <Form.Control
+                 type="text" 
+                 onChange={handleInputChange}
+                 placeholder="Insira seu endereço"
+                />
               </Form.Group>
-              <Form.Group controlId="formBasicEmail">
+
+              <Form.Group>
                 <Form.Label>Número<span class="text-danger">*</span></Form.Label>
-                <Form.Control type="email" placeholder="Insira o número de sua residência" />
+                <Form.Control
+                 type="text" 
+                 onChange={handleInputChange}
+                 placeholder="Insira o número de sua residência"
+                />
               </Form.Group>
-              <Form.Group controlId="formBasicEmail">
+
+              <Form.Group>
                 <Form.Label>Complemento</Form.Label>
-                <Form.Control type="email" placeholder="Insira um complemento se achar necessário" />
+                <Form.Control
+                 type="text" 
+                 onChange={handleInputChange}
+                 placeholder="Insira um complemento se achar necessário"
+                />
               </Form.Group>
             </Form>
           </Card>

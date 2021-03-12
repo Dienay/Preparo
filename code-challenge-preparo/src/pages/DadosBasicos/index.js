@@ -3,12 +3,22 @@ import { Card } from '../../common/styles/Cards';
 import { Containers } from '../../common/styles/Containers';
 import Header from '../../components/Header';
 
+import useForm from '../../Hooks/useForm';
+
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
 import { FormContainer } from './styles';
 
 function DadosBasicos() {
+
+  const { form, onChange } = useForm({email: "", password:""})
+
+  const handleInputChange = event => {
+      const { name, value } = event.target
+      onChange(name, value)
+  }
+  
   return (
     <div>
       <Header />
