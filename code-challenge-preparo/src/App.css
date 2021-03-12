@@ -1,0 +1,6 @@
+.app-container {
+  background-color: #f2f2f2;
+  margin-top: 70px;
+  min-height: calc(100vh - 70px);
+
+}
